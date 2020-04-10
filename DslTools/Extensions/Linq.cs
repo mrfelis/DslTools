@@ -36,7 +36,7 @@ namespace DslTools.Extensions
         /// <returns>Returns an enumerable whose first element is a combination 
         /// of the first elements of the both en umerables. The second is a 
         /// combination of the second elements. Etc.</returns>
-        public static IEnumerable<TResult> ZipAll<TFirst, TSecond, TResult>(this IEnumerable<TFirst> first, 
+        public static IEnumerable<TResult> ZipAll<TFirst, TSecond, TResult>(this IEnumerable<TFirst> first,
             IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector)
         {
             var a = first.GetEnumerator();
@@ -54,7 +54,7 @@ namespace DslTools.Extensions
 
             while (done())
             {
-                var r = resultSelector( a1 ? a.Current : default(TFirst), b1 ? b.Current : default(TSecond));
+                var r = resultSelector(a1 ? a.Current : default(TFirst), b1 ? b.Current : default(TSecond));
                 yield return r;
             }
         }

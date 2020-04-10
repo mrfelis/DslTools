@@ -1,7 +1,5 @@
-﻿using System.Text.RegularExpressions;
-using DslTools;
+﻿using DslTools.Tests.StockObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DslTools.Tests.StockObjects;
 
 namespace DslTools.Tests
 {
@@ -9,7 +7,7 @@ namespace DslTools.Tests
     [TestClass]
     public class TokenValueTests
     {
-        private enum TestToken { DoNotUse,  One, Two }
+        private enum TestToken { DoNotUse, One, Two }
 
         [TestMethod]
         public void ConstructFromMatch()
@@ -26,7 +24,7 @@ namespace DslTools.Tests
             Assert.AreEqual(expectedValue.Length, capture.Length);
 
 
-            var to = new TokenValue<TestToken>( expectedToken.ToString(), capture);
+            var to = new TokenValue<TestToken>(expectedToken.ToString(), capture);
 
             Assert.AreEqual(expectedToken, to.Id, "Token Id should be taken from name argument");
             Assert.AreEqual(expectedValue, to.Value, "Value should come from the capture");

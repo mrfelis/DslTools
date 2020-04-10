@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Collections.Generic;
 
 namespace DslTools
 {
@@ -49,7 +45,7 @@ namespace DslTools
 
         private TokenValue<T> GetEof()
         {
-            return  new TokenValue<T>(_eof, string.Empty, string.Empty, _position, 0);
+            return new TokenValue<T>(_eof, string.Empty, string.Empty, _position, 0);
         }
 
         private readonly IEnumerator<TokenValue<T>> _enumerator;

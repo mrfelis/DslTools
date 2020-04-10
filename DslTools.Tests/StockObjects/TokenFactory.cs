@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using DslTools;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace DslTools.Tests.StockObjects
+﻿namespace DslTools.Tests.StockObjects
 {
     public class TokenFactory<T>
     {
@@ -47,7 +41,7 @@ namespace DslTools.Tests.StockObjects
             Reset();
             var y = TokenLength;
 
-            
+
             return r;
         }
 

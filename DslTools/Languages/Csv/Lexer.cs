@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DslTools.Languages.Csv
 {
@@ -60,7 +57,7 @@ namespace DslTools.Languages.Csv
                         break;
 
                     case Tokens.Delimiter:
-                        if (previous?.Id == Tokens.Delimiter  && Options.InjectNullValues)
+                        if (previous?.Id == Tokens.Delimiter && Options.InjectNullValues)
                             yield return new TokenValue<Tokens>(Tokens.Value, string.Empty, string.Empty, item.Start, 0);
 
                         if (!Options.RemoveDelimeters)

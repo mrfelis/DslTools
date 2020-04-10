@@ -1,7 +1,6 @@
-﻿using System;
+﻿using DslTools.Extensions;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace DslTools
@@ -49,7 +48,7 @@ namespace DslTools
         {
             if (_regEx == null)
             {
-                _regEx = new Regex("(?:"+string.Join("|", TokenDefinitions.Concat(GetAdditionalTokens())
+                _regEx = new Regex("(?:" + string.Join("|", TokenDefinitions.Concat(GetAdditionalTokens())
                     .Select(p => $"(?<{p.Key}>{p.Value})")) + ")?");
             }
 

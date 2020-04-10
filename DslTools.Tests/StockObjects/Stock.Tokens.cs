@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using DslTools;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DslTools.Tests.StockObjects
 {
@@ -45,7 +43,7 @@ namespace DslTools.Tests.StockObjects
             /// <returns></returns>
             public static Group CaptureAfter(string value, int index)
             {
-                return Capture($"{new string(' ',index)}{value}", $@"\w*({value})");
+                return Capture($"{new string(' ', index)}{value}", $@"\w*({value})");
 
             }
 

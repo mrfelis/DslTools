@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using DslTools.Languages.Csv;
+﻿using DslTools.Languages.Csv;
 using DslTools.Tests.StockObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -74,7 +70,7 @@ namespace DslTools.Tests.Languages.Csv
             Stock.Verify.CreateTokenStreamExpectation<Tokens>()
                 //.Expect(Tokens.Value, "123")
                 .Expect(t => t.Id(Tokens.Value)
-                              .Value (value)
+                              .Value(value)
                 )
                 .Verify(_lexer.Tokenize(value));
         }

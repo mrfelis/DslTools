@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace DslTools.Languages.Csv
 {
@@ -106,23 +104,23 @@ namespace DslTools.Languages.Csv
                         items = new List<string>();
                         break;
 
-                    // TODO: Add error handling and report these token types as errors
-                    //case Tokens.Unknown:
-                    //    break;
-                     //case Tokens.Unterminated:
-                    //    break;
+                        // TODO: Add error handling and report these token types as errors
+                        //case Tokens.Unknown:
+                        //    break;
+                        //case Tokens.Unterminated:
+                        //    break;
 
-                    // There is n othing to be done with these token types
-                   //case Tokens.EOF:
-                    //    break;
-                    //case Tokens.Delimiter:
-                    //    break;
-                    //case Tokens.NullValue:
-                    //    break;
-                    //case Tokens.Quoted:
-                    //    break;
-                    //case Tokens.EmbeddedQuoted:
-                    //    break;
+                        // There is n othing to be done with these token types
+                        //case Tokens.EOF:
+                        //    break;
+                        //case Tokens.Delimiter:
+                        //    break;
+                        //case Tokens.NullValue:
+                        //    break;
+                        //case Tokens.Quoted:
+                        //    break;
+                        //case Tokens.EmbeddedQuoted:
+                        //    break;
                 }
 
                 context.Advance();

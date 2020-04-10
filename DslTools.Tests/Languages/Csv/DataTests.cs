@@ -1,10 +1,7 @@
-﻿using System;
+﻿using DslTools.Languages.Csv;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
-using DslTools.Languages.Csv;
-using DslTools.Tests.StockObjects;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DslTools.Tests.Languages.Csv
 {

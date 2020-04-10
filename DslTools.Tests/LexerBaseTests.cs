@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DslTools.Tests.StockObjects;
-using static DslTools.Tests.StockObjects.Stock.Tokens;
+﻿using DslTools.Tests.StockObjects;
 using DslTools.Tests.StockObjects.Verifiers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
+using static DslTools.Tests.StockObjects.Stock.Tokens;
 
 namespace DslTools.Tests
 {

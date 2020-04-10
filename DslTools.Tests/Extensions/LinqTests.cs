@@ -1,7 +1,8 @@
-﻿using System;
+﻿using DslTools.Extensions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DslTools.Tests.Extensions
 {

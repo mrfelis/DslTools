@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using DslTools;
+﻿using DslTools.Tests.StockObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DslTools.Tests.StockObjects;
 using static DslTools.Tests.StockObjects.Stock.Tokens;
 
 namespace DslTools.Tests
