@@ -44,7 +44,7 @@ namespace DslTools
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public IEnumerable<TokenValue<T>> Tokenize(string value)
+        public virtual IEnumerable<TokenValue<T>> Tokenize(string value)
         {
             if (_regEx == null)
             {

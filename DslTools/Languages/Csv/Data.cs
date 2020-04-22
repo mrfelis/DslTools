@@ -96,7 +96,6 @@ namespace DslTools.Languages.Csv
                     case Tokens.EOL:
                         if (addHeader)
                             headers = items;
-
                         else
                             r.AddRow(items);
 
@@ -110,7 +109,7 @@ namespace DslTools.Languages.Csv
                         //case Tokens.Unterminated:
                         //    break;
 
-                        // There is n othing to be done with these token types
+                        // There is nothing to be done with these token types
                         //case Tokens.EOF:
                         //    break;
                         //case Tokens.Delimiter:

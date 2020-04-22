@@ -54,6 +54,16 @@
     <Compile Include="Languages\Csv\LexerTests.cs" />
     <Compile Include="LexerBaseWithUnkownTests.cs" />
     <Compile Include="PaserContextTests.cs" />
+    <Compile Include="Properties\Samples.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Samples.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\GettingStarted\CompleteLexer.cs" />
+    <Compile Include="Samples\GettingStarted\RewriteLexer.cs" />
+    <Compile Include="Samples\GettingStarted\Tokens.cs" />
+    <Compile Include="Samples\GettingStarted\GettingStartedTests.cs" />
+    <Compile Include="Samples\GettingStarted\SparseLexer.cs" />
     <Compile Include="StockObjects\Lexers\OneTwoThreeAndUnknownLexer.cs" />
     <Compile Include="StockObjects\Lexers\OneTwoThreeLexer.cs" />
     <Compile Include="StockObjects\Stock.Tokens.cs" />
@@ -74,7 +84,15 @@
       <Name>DslTools</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\GettingStarted.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Samples.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Samples.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
