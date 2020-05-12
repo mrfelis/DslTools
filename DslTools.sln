@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DslTools", "DslTools\DslTools.csproj", "{31237BE4-3AF5-47AC-B32D-9B803F17AD1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DslTools.Tests", "DslTools.Tests\DslTools.Tests.csproj", "{B4513432-D71E-48DF-AF42-13F1CC27EEAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB53E945-75CD-4B6D-882D-53CD1BCD94D1}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31237BE4-3AF5-47AC-B32D-9B803F17AD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31237BE4-3AF5-47AC-B32D-9B803F17AD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31237BE4-3AF5-47AC-B32D-9B803F17AD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31237BE4-3AF5-47AC-B32D-9B803F17AD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4513432-D71E-48DF-AF42-13F1CC27EEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4513432-D71E-48DF-AF42-13F1CC27EEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4513432-D71E-48DF-AF42-13F1CC27EEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4513432-D71E-48DF-AF42-13F1CC27EEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B3CBF12-E08D-46A2-98A3-0D61905F1DC5}
+	EndGlobalSection
+EndGlobal

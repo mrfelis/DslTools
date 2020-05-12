@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <!--<version>$version$</version>-->
+    <version>0.1.0-alpha</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/mrfelis/DslTools</projectUrl>
+    <iconUrl>https://github.com/mrfelis/DslTools/blob/master/logo.png</iconUrl>
+    <description>$description$</description>
+    <releaseNotes>
+      * Initial prerelease
+      * Two base classes for lexing tokens
+      * A ParseContext class to help write Parsers. Minimal implementation to date
+      * A TokenValue class for reporting the Value, identify, and location of tokens in the source
+    </releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>DSL .Net lexer parser</tags>
+  </metadata>
+</package>
